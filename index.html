@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Online Computer Accessories Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 15px;
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: 170px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .product p {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .add-btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1f2937;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🖥️ TechZone – Computer Accessories Store</h1>
+</header>
+
+<div class="container">
+
+  <div class="product">
+    <img src="f1.jpg" alt="Keyboard">
+    <h3>Mechanical Keyboard</h3>
+    <p>Rs. 3,500</p>
+    <button class="add-btn" onclick="addToCart('Mechanical Keyboard')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="f2.jpg" alt="Mouse">
+    <h3>Wireless Mouse</h3>
+    <p>Rs. 1,200</p>
+    <button class="add-btn" onclick="addToCart('Wireless Mouse')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="f3.jpg" alt="Headset">
+    <h3>Gaming Headset2</h3>
+    <p>Rs. 4,200</p>
+    <button class="add-btn" onclick="addToCart('Gaming Headset')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="f4.jpg" alt="Webcam">
+    <h3>HD Webcam</h3>
+    <p>Rs. 2,800</p>
+    <button class="add-btn" onclick="addToCart('HD Webcam')">Add to Cart</button>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 TechZone. All rights reserved.
+</footer>
+
+<script>
+  function addToCart(product) {
+    alert(product + " added to cart!");
+  }
+</script>
+
+</body>
+</html>
